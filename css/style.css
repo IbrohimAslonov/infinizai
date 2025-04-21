@@ -1,0 +1,1014 @@
+@import "common.css";
+@import "responsive.css";
+@import "variables.css";
+@import "responsive.css";
+
+header {
+  background-color: var(--primary-color);
+}
+
+header .navbar .nav-menu {
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar .nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navbar .nav-menu .nav-links .nav-link {
+  gap: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+header .navbar .nav-menu .nav-links .nav-link .nav-item a,
+header .navbar .nav-menu .nav-btn a {
+  color: white;
+}
+
+header .navbar .nav-menu .nav-links .nav-link .nav-item a:hover {
+  color: var(--secondary-color);
+}
+
+header .navbar .nav-menu .nav-btn a:hover {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+header .navbar .nav-menu .nav-btn {
+  gap: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar .nav-menu .nav-btn button {
+  width: 48px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+}
+
+header .navbar .nav-menu .nav-btn a {
+  padding: 16px 30px;
+  border: 1px solid white;
+}
+
+header .navbar .nav-menu .toggle {
+  display: none;
+}
+
+header .navbar .nav-menu #navbar-open {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+header .navbar .nav-menu #navbar-close {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+header .navbar .nav-menu .toggle #navbar-close {
+  position: absolute;
+  top: 21.5px;
+  right: 0px;
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+
+#navbar-responsive .toggle-item a {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  header .navbar .nav-menu .nav-logo {
+    margin-left: 20px;
+  }
+
+  header .navbar .nav-menu .nav-links,
+  header .navbar .nav-menu .nav-btn .contact {
+    display: none;
+  }
+
+  header .navbar .nav-menu #navbar-open,
+  header .navbar .nav-menu #navbar-close {
+    display: block;
+    margin-right: 20px;
+  }
+
+  header .navbar .nav-menu .toggle {
+    display: block;
+  }
+
+  header .navbar .nav-menu .nav-btn #mode-btn {
+    position: absolute;
+    right: 80px;
+  }
+}
+
+/* header main start  */
+
+.header-main {
+  padding-top: 180px;
+  padding-bottom: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.header-main .header-left span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "OrbitMedium";
+  display: flex;
+  align-items: center;
+}
+
+.header-main .header-left h1 {
+  margin-top: 16px;
+  margin-bottom: 43px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  font-family: "OrbitRegular";
+  position: relative;
+}
+
+.header-main .header-left h1 img {
+  bottom: 80px;
+  right: 10px;
+  position: absolute;
+}
+
+.header-main .header-left p {
+  margin-bottom: 53px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "OrbitRegular";
+}
+
+.header-main .header-left .left-btn {
+  gap: 40px;
+  display: flex;
+}
+
+.header-main .header-left .left-btn a {
+  padding: 20px 34px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  transition: 0.5s;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.header-main .header-left .left-btn a:hover {
+  background-color: var(--secondary-color);
+}
+
+.header-main .header-right img {
+  max-width: 665px;
+  height: 518px;
+  display: inline-block;
+}
+
+@media (max-width: 1100px) {
+  .header-main {
+    padding-top: 50px;
+    gap: 50px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-main .header-left .left-btn {
+    gap: 20px;
+    display: flex;
+  }
+
+  .header-main .header-right img {
+    max-width: 565px;
+    height: 418px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-main .header-left span {
+    gap: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-main .header-left h1 {
+    margin-bottom: 43px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+  }
+
+  .header-main .header-left h1 img {
+    width: 330px;
+    bottom: 50px;
+    right: 10px;
+    position: absolute;
+    display: inline-block;
+  }
+
+  .header-main .header-left p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .header-main .header-left .left-btn {
+    gap: 0px;
+  }
+
+  .header-main .header-left .left-btn a {
+    padding: 15px 29px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .header-main .header-right img {
+    max-width: 440px;
+    height: 293px;
+  }
+}
+
+/* our sponsor start  */
+
+#sponsors {
+  padding: 128px 0;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.sponsor span {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: "OrbitRegular";
+  position: relative;
+}
+
+.sponsor span img {
+  right: 0;
+  bottom: -15px;
+  position: absolute;
+}
+
+.sponsor p {
+  margin: 0 auto;
+  max-width: 576px;
+  margin-top: 27px;
+  margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "OrbitRegular";
+}
+
+.sponsor .brends {
+  display: flex;
+  gap: 30px;
+}
+
+.sponsor .brends .brends-row {
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 1400px) {
+  .sponsor .brends {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .sponsor .brends .brends-row {
+    flex-direction: column;
+  }
+}
+
+/* advantage start  */
+
+#advantage {
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/advantage/advantage-png.png);
+}
+
+#advantage .advantage {
+  padding: 130px 0;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.advantage .esport {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 auto;
+  font-family: "OrbitRegular";
+  color: var(--primary-color);
+}
+
+.advantage h2 {
+  margin: 0 auto;
+  max-width: 770px;
+  margin-top: 11px;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  font-family: "OrbitRegular";
+}
+
+.advantage p {
+  margin: 0 auto;
+  max-width: 770px;
+  margin-bottom: 61px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "OrbitRegular";
+  color: #dfdfdfcc;
+}
+
+.advantage .advantage-article {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage .advantage-article .advantage-row {
+  gap: 35px;
+  display: flex;
+  text-align: left;
+}
+
+.advantage .advantage-article .advantage-row .card {
+  margin: 0 auto;
+  width: 642px;
+  padding: 35px;
+  border-radius: 10px;
+  background-color: #ffffff26;
+}
+
+.advantage .advantage-article .advantage-row .card span {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  font-family: "OrbitRegular";
+}
+
+.advantage .advantage-article .advantage-row .card p {
+  margin-top: 19px;
+  margin-left: 47px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "OrbitRegular";
+}
+
+@media (max-width: 950px) {
+  .advantage .advantage-article .advantage-row .card {
+    width: 442px;
+    height: 200px;
+    padding: 20px 20px;
+  }
+
+  .advantage .advantage-article .advantage-row .card span {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: "OrbitRegular";
+  }
+
+  .advantage .advantage-article .advantage-row .card p {
+    margin-top: 19px;
+    margin-left: 47px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "OrbitRegular";
+  }
+}
+
+@media (max-width: 780px) {
+  .advantage .advantage-article .advantage-row .card span {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "OrbitRegular";
+  }
+
+  .advantage .advantage-article .advantage-row .card img {
+    display: inline-block;
+    width: 25px;
+  }
+
+  .advantage .advantage-article .advantage-row .card p {
+    margin-top: 19px;
+    margin-left: 47px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "OrbitRegular";
+  }
+}
+
+@media (max-width: 600px) {
+  .advantage .esport {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .advantage h2 {
+    font-size: 54px;
+    line-height: 64px;
+  }
+
+  .advantage p {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .advantage .advantage-article .advantage-row {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+
+  .advantage .advantage-article .advantage-row .card {
+    width: 342px;
+    height: 170px;
+    padding: 20px 20px;
+  }
+
+  .advantage .advantage-article .advantage-row .card p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* new era start  */
+
+#new-era {
+  background-color: var(--primary-color);
+}
+
+.new-era {
+  padding: 85px 0;
+  /* gap: 80px; */
+  display: flex;
+}
+
+.new-era .era-left .esport {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.new-era .era-left h2 {
+  max-width: 720px;
+  margin-top: 11px;
+  margin-bottom: 38px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.new-era .era-left p {
+  max-width: 720px;
+  margin-bottom: 61px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "OrbitRegular";
+  color: #dfdfdfcc;
+}
+
+.new-era .era-left a {
+  padding: 20px 34px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  transition: 0.5s;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.new-era .era-left a:hover {
+  background-color: var(--secondary-color);
+}
+
+.new-era .era-right {
+  display: flex;
+  align-items: center;
+}
+
+.new-era .era-right .game {
+  max-width: 500px;
+  margin: 0 auto;
+  display: inline-block;
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  .new-era {
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .new-era .era-right .game {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .new-era .era-left {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .new-era .era-left .esport {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .new-era .era-left h2 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .new-era .era-left p {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .new-era .era-left a {
+    padding: 15px 29px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .new-era .era-right .game {
+    max-width: 300px;
+  }
+}
+
+/* game type start  */
+
+.game-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.game-type .game-card {
+  padding: 250px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-type .game-card .game-title {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.game-type .game-card .game-title img {
+  width: 128px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.game-type .game-top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/images/game-type/fps.png);
+}
+
+.game-type .game-top-second {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/images/game-type/multiplayer.png);
+}
+
+.game-type .game-top-third {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/images/game-type/open-world.png);
+}
+
+@media (max-width: 1050px) {
+  .game-type {
+    flex-direction: column;
+  }
+
+  .game-type .game-card {
+    width: 100%;
+    background-repeat: repeat-y;
+  }
+}
+
+@media (max-width: 500px) {
+  .game-type .game-card .game-title {
+    font-size: 34px;
+    line-height: 44px;
+    font-family: "OrbitRegular";
+    color: white;
+  }
+
+  .game-type .game-card .game-title img {
+    width: 100px;
+  }
+}
+
+/* figma width is 1440px my PC width is 1536px. */
+
+/* News start  */
+
+#news {
+  background-color: var(--primary-color);
+}
+
+.news {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .news-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.news .news-top .top-title {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .news-top .top-title .esport {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  font-family: "OrbitRegular";
+  color: white;
+  /* color: var(--primary-color); */
+}
+
+.news .news-top .top-title h2 {
+  margin: 0 auto;
+  max-width: 770px;
+  margin-top: 11px;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.news .news-top a {
+  height: 70px;
+  padding: 20px 34px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  transition: 0.5s;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.news .news-top a:hover {
+  background-color: var(--secondary-color);
+}
+
+.news .news-bottom {
+  margin: 0 auto;
+  margin-top: 74px;
+  gap: 24px;
+  display: flex;
+}
+
+.news .news-bottom .bottom-left-card {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .news-bottom .bottom-left-card span {
+  margin-top: 54px;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-block;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.news .news-bottom .bottom-left-card h3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.news .news-bottom .bottom-left-card img {
+  margin: 0 auto;
+}
+
+.news .news-bottom .bottom-right {
+  gap: 37px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .news-bottom .bottom-right .right-row {
+  margin: 0 auto;
+  gap: 55px;
+  display: flex;
+}
+
+.news .news-bottom .bottom-right .right-row .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.news .news-bottom .bottom-right .right-row .card img {
+  width: 312px;
+  display: inline-block;
+}
+
+.news .news-bottom .bottom-right .right-row .card span {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+.news .news-bottom .bottom-right .right-row .card h3 {
+  max-width: 312px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  display: inline-block;
+  font-family: "OrbitRegular";
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .news .news-top {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .news .news-bottom .bottom-left-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .news .news-bottom .bottom-right {
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .news .news-bottom .bottom-right .right-row {
+    gap: 37px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news .news-bottom {
+    flex-direction: column;
+  }
+
+  .news .news-top a {
+    height: 70px;
+    padding: 20px 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 750px) {
+  .news .news-top {
+    flex-direction: column;
+  }
+
+  .news .news-top a {
+    align-self: flex-start;
+  }
+
+  .news .news-bottom .bottom-left-card img {
+    width: 548px;
+  }
+
+  .news .news-bottom .bottom-right .right-row {
+    flex-direction: column;
+  }
+
+  @media (max-width: 620px) {
+    .news .news-bottom .bottom-left-card img {
+      width: 312px;
+    }
+
+    .news .news-bottom .bottom-left-card h3 {
+      margin: 0 auto;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      font-family: "OrbitRegular";
+      color: white;
+    }
+  }
+}
+
+/* community start  */
+
+#community {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/images/community/community.png);
+}
+
+.community {
+  padding: 130px 296px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.community h2 {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  font-family: "OrbitRegular";
+  position: relative;
+  text-align: center;
+}
+
+.community h2 img {
+  margin: 0 auto;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.community p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  font-family: "OrbitRegular";
+  color: #555555;
+  text-align: center;
+}
+
+.community .mail {
+  display: flex;
+  justify-content: center;
+}
+
+.community .mail input {
+  padding: 21px 13px;
+  width: 445px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "OrbitRegular";
+  color: #555555;
+  border: none;
+}
+
+.community .mail button {
+  padding: 20px 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "OrbitRegular";
+  border: none;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+  .community {
+    padding: 130px 96px;
+  }
+
+  .community .mail input {
+    padding: 10px 8px;
+    width: 345px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .community .mail button {
+    padding: 10px 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .community {
+    padding: 130px 20px;
+  }
+
+  .community h2 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .community h2 img {
+    width: 300px;
+    display: inline-block;
+  }
+
+  .community .mail input {
+    padding: 10px 5px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .community .mail button {
+    padding: 10px 5px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

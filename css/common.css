@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "OrbitRegular";
+  src: url(../assets/fonts/orbitron/Orbitron-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OrbitMedium";
+  src: url(../assets/fonts/orbitron/Orbitron-Medium.ttf);
+}
+
+@font-face {
+  font-family: "OrbitBold";
+  src: url(../assets/fonts/orbitron/Orbitron-Bold.ttf);
+}
+
+@font-face {
+  font-family: "OrbitBlack";
+  src: url(../assets/fonts/orbitron/Orbitron-Black.ttf);
+}
+
+/* fix all elements with margin 0 auto  !import*/
+
+* {
+  /* margin: 0 auto; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "OrbitRegular";
+}
+
+.container {
+  /* 1440-60*2+20*2=1360px */
+  margin: 0 auto;
+  max-width: 1360px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.dark header {
+  background-color: black;
+  color: white !important;
+}
+
+.dark #navbar-responsive {
+  background-color: black;
+  color: white !important;
+}
+
+.dark #new-era {
+  background-color: black;
+  color: white !important;
+}
+
+.dark .new-era .era-left .esport {
+
+  color:var(--primary-color);
+}
+
+.dark .new-era .era-left a:hover {
+  background-color: var(--primary-color);
+}
+
+.dark .game-type {
+  background-color: black;
+}
+
+.dark #news {
+  background-color: black;
+}
+
+
+.dark .news .news-top .top-title .esport {
+  color: var(--primary-color);
+}
+
+.dark .news .news-top a:hover {
+  background-color: var(--primary-color);
+}
+
+.dark .news .news-bottom .bottom-left-card span,  .dark .news .news-bottom .bottom-right .right-row .card span{
+  color: var(--primary-color);
+}
